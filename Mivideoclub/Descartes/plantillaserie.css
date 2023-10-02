@@ -1,0 +1,31 @@
+#plantillaserie{
+    min-height: 700px;
+    padding: 15px;
+    
+}
+#plantillaserie p{
+    font-size: 1.3em;
+    color: #d4cbcb;
+    margin-bottom: 50px;
+
+}
+#plantillaserie h1{
+    font-size: 2.2em;
+    text-align: center;
+    text-decoration: underline;
+    color: #f2f1f1;
+}
+#plantillaserie h2{
+    font-size: 2em;
+    text-decoration: underline;
+}
+#plantillaserie img{
+    float: right;
+    height: auto;
+    width: 300px;
+    margin-left: 10px;
+}
+iframe{
+    border: 5px solid #500000;
+    box-shadow: 5px 5px 20px 10px #000000;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="imprimir.css" media="print">
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background: url(Iconos/Cabina-telefono.jpg) no-repeat center top;
+        font-family: monospace;
+    }
+    section {
+        width: 85%;
+        margin: auto;
+        margin-top: 120px;
+        background-color: rgba(77, 77, 77, 0.67);
+    }
+    footer{
+        margin-top: 150px;
+        background-color: rgba(240, 248, 255, 0);
+    }
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Noticias.html">Noticias</a></li>
+            <li><a href="">Enlace</a></li>
+            <li><a href="">Enlace</a></li>
+            <li><a href="">Enlace</a></li>
+            <li><a href="">Enlace</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+            <li class="derecha"><a href=""><span>Iniciar sesión</span></a></li>
+            <li class="derecha2"><a href="Registro.html"><span>Registrate</span></a></li>
+        </ul>
+    </nav>
+
+    <section>
+      <!--<img src="Iconos/Buzon2.jpg" width="auto" height="300px" alt="" id="Buzon"-->
+       
+       <div id="Contactos">
+        <p><label for="">Nombre</label>
+            <input type="text">
+        </p>
+        <p><label for="">Apellidos</label>
+            <input type="text">
+        </p>
+        <p><label for="">email</label>
+            <input type="text">
+        </p>
+        <p><label for="">Comentario</label>
+           <textarea name="comments" cols="35" rows="4" id="comentarios"></textarea>
+        </p>
+        <input type="submit" id="boton" name="Registrarme">
+        
+         </div>
+        
+    </section>
+
+    <footer>
+        <div>
+            <a href="index.html"><img src="Iconos/Flecha.png" width="100px" height="100px" alt="" id="flecha"></a>
+        </div>
+
+        <address>
+            <ul>
+                <li class="derecha"><a href="">Politica de privacidad</a></li>
+                <li class="derecha2"><a href="Condiciones-de-uso.html">Condiciones de uso</a></li>
+            </ul>
+        </address>
+    </footer>
+</body></html>

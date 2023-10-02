@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Apuntes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ejercicios.html">Ejercicios</a></li>
+                <li><a href="videosYtutoriales.html">Videos y Tutoriales</a></li>
+                <li><a href="apuntes.html">Apuntes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Variables</h2>
+            <p>Una variable es un “almacén con un nombre” para guardar datos</p>
+            <p>Para generar una variable en JavaScript, se usa la palabra clave let</p>
+            <pre><code>let message;</code></pre>
+            <p>Podemos combinar la declaración de la variable y su asignación en una sola línea</p>
+            <pre><code>let message="Hello World!";</code></pre>
+            <p>También podemos declarar variables múltiples en una sola línea:</p>
+            <pre><code>let username="John Doe", password="secret", email="jdoe@me.com";</code></pre>
+            <p>La versión de líneas múltiples es un poco más larga, pero se lee más fácil:</p>
+            <pre><code>
+            let username="John Doe",
+            let password="secret",
+            let email="jdoe@me.com";
+            </code></pre>
+            <h3>NOMBRAMIENTO DE VARIABLES</h3>
+            <p>Existen dos limitaciones de nombre de variables en JavaScript:</p>
+            <ol>
+                <li>El nombre únicamente puede incluir letras, dígitos, o los
+                    símbolos $ y _.</li>
+                <li>El primer carácter no puede ser un dígito</li>
+                <pre><code>
+                    let abc;        let $ = 1;      
+                    let test123;    let _ = 2;
+                </code></pre>
+            </ol>
+            <p> La Capitalización es Importante. No es lo mismo manzana que
+                Manzana.</p>
+            <p>Letras que no son del alfabeto inglés están permitidas, pero
+                no se recomiendan.</p>
+            <p>Es posible definir una variable sin var ni let.</p>
+            <h3>VARIABLES - CONSTANTES</h3>
+            <p>Se usa const en lugar de let.</p>
+            <p>No pueden ser alteradas</p>
+            <p>Se deben nombrar en Mayúsculas cuando se conocen su valor con
+                antelación</p>
+            <pre><code>const PI = 3.14</code></pre>
+            <p> Ser una “constante” solo significa que el valor de la variable nunca
+                cambia. Pero hay constantes que son conocidas previo a la ejecución
+                (como el valor hexadecimal del color rojo) y hay constantes que son
+                calculadas en el tiempo de ejecución, pero no cambian después de
+                su asignación inicial.</p>         
+        </div>
+
+        <div class="container">
+            <h2>TIPOS DE DATOS</h2>
+            <p> Un valor en JavaScript siempre pertenece a un tipo de dato
+                determinado</p>
+            <p>Hay ocho tipos de datos básicos en JavaScript.</p>
+            <p> Podemos almacenar un valor de cualquier tipo dentro de una
+                variable. Por este motivo JavaScript se considera un lenguaje
+                de tipado dinámico o débil</p>
+            <h3>TIPOS DE DATOS - PRIMITIVOS</h3>
+            <strong><p>Number:</p></strong>
+            <ul>
+                <li>El tipo number representa tanto números enteros como de punto flotante.</li>
+                <li>Además de los números comunes, existen los llamados “valores numéricos
+                    especiales” que también pertenecen a este tipo de datos: Infinity, -Infinity y
+                    NaN.</li>
+                <li>Hacer matemáticas es “seguro” en JavaScript. El script nunca se detendrá con
+                    un error fatal (“morir”). En el peor de los casos, obtendremos NaN como
+                    resultado.</li>
+            </ul>
+            <strong><p>BigInt:</p></strong>
+            <ul>
+                <li>En JavaScript, el tipo “number” no puede representar valores enteros mayores
+                    que (2 53 -1) (eso es 9007199254740991), o menor que -(2 53 -1) para
+                    negativos</li>
+                <li>BigInt se agregó recientemente al lenguaje para representar enteros de
+                    longitud arbitraria</li>
+                <li>Un valor BigInt se crea agregando n al final de un entero:</li>
+                <pre><code>
+                    //la "n" al final significa que es un BigInt
+                    const bigInt = 1234567894390847029374121293n;
+                </code></pre>
+            </ul>
+            <h3>TIPOS DE DATOS - PRIMITIVOS</h3>
+            <strong><p>String:</p></strong>
+            <ul>
+                <li>Un string en JavaScript es una cadena de caracteres y debe colocarse entre
+                    comillas</li>
+                <li>En JavaScript, hay 3 tipos de comillas.</li>
+                <ol>
+                    <li>Comillas dobles: "Hola".</li>
+                    <li>Comillas simples: 'Hola'.</li>
+                    <li>Backticks (comillas invertidas): `Hola`.</li>
+                </ol>
+                <li>Las comillas dobles y simples son comillas “sencillas” (es decir, funcionan igual)</li>
+                <li>Los backticks son comillas de “funcionalidad extendida”. Nos permiten incrustar
+                    variables y expresiones en una cadena de caracteres encerrándolas en ${...}</li>
+                <pre><code>
+                    //incrustar expresión
+                    alert(`el resultado es ${1 + 2}`);
+                </code></pre>
+                <li>No existe el tipo carácter</li>
+            </ul>
+        </div>
+        <div class="flecha">
+            <a href="#"><img src="img/flecha.png" alt=""></a>
+        </div>
+        
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+header{
+    background-color: #4d4d4d;
+    height: 140px; 
+    padding: 0 0 10px 10px;
+    
+}
+div.icono{
+    background-image: url(tv-antigua2.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: inherit;
+    margin: 0 0 0 25px;
+}
+header h1{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+    font-family: monospace;
+    margin-bottom: 10px;
+}
+header p{
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.3em;
+    margin: auto;
+}

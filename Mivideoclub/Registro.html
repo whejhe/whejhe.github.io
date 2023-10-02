@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="imprimir.css" media="print">
+</head>
+<style>
+    section {
+        width: 85%;
+        margin: auto;
+        margin-top: 50px;
+        background-color: rgba(77, 77, 77, 0.69);
+    }
+
+    footer {
+        margin-top: 150px;
+        background-color: rgba(240, 248, 255, 0)
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: url(Iconos/Buzon3.jpg) no-repeat center;
+        background-size: 100%;
+    }
+</style>
+
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Noticias.html">Noticias</a></li>
+            <li><a href="">Enlace</a></li>
+            <li><a href="">Enlace</a></li>
+            <li><a href="">Enlace</a></li>
+            <li><a href="">Enlace</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+            <li class="derecha"><a href="Login.html"><span>Iniciar sesión</span></a></li>
+            <li class="derecha2"><a href="Registro.html"><span>Registrate</span></a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <!--figure id="Buzon">
+            <img src="Iconos/Registro.png" width="auto" height="300px" alt="">
+            <figcaption>Valoramos tú privacidad</figcaption>
+        </figure-->
+        <div id="Contactos">
+            <p><label for="">Nombre/Nick</label>
+                <input type="text" name="nombre">
+            </p>
+            <p><label for="">Apellidos</label>
+                <input type="text" name="apellidos">
+            </p>
+            <p><label for="">email</label>
+                <input type="text" name="email">
+            </p>
+            <p><label for="">Fecha de Nacimiento</label>
+                <input type="text" name="Fecha">
+            </p>
+            <p>
+                <label for="referencias" class="etiq">Genero</label>
+                <select name="Genero" id="refer">
+                    <option value="null">Selecciona una</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
+                    <option value="3">Prefiero no Decir</option>
+                </select>
+            </p>
+            <p><label for="">Ciudad</label>
+                <input type="text" name="Ciudad">
+            </p>
+            <p><label for="">Contraseña</label>
+                <input type="password">
+            </p>
+            <p><label for="">Repetir contraseña</label>
+                <input type="password">
+            </p>
+            <button type="submit" id="boton">Registrarme</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <div>
+            <a href="index.html"><img src="Iconos/Flecha.png" width="100px" height="100px" alt="" id="flecha"></a>
+        </div>
+
+        <address>
+            <ul>
+                <li class="derecha"><a href="">Politica de privacidad</a></li>
+                <li class="derecha2"><a href="Condiciones-de-uso.html">Condiciones de uso</a></li>
+            </ul>
+        </address>
+    </footer>
+</body></html>

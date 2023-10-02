@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Con JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ejercicios condicionales</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ejercicios.html">Ejercicios</a></li>
+                <li><a href="videosYtutoriales.html">Videos y Tutoriales</a></li>
+                <li><a href="apuntes.html">Apuntes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="exercise-container">
+        <div class="exercise">
+            <h2>Ejercicio 1 (condicional If)</h2>
+            <p>Crea un programa que determine si un número es positivo o negativo.</p>
+            <textarea id="code1"></textarea>
+            <button onclick="executeCode(1)">Ejecutar</button>
+            <div id="output1"></div>
+        </div>
+        <div class="solucion">
+            <img src="img/solucion.jpg" alt="">
+            <pre>
+                <code>
+                    function determinarPositivoNegativo(numero) {
+                        if (numero > 0) {
+                            return "El número es positivo";
+                        } else if (numero < 0) {
+                            return "El número es negativo";
+                        } else {
+                            return "El número es cero";
+                        }
+                    }
+            
+                    let numero = 5;
+                    let resultado = determinarPositivoNegativo(numero);
+                    console.log(resultado); // Imprimirá "El número es positivo"`;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="exercise-container">
+        <div class="exercise">
+            <h2>Ejercicio 2 (condicional If)</h2>
+            <p>Desarrolla un programa que verifique si un número es par o impar.</p>
+            <textarea id="code2"></textarea>
+            <button onclick="executeCode(2)">Ejecutar</button>
+            <div id="output2"></div>
+        </div>
+        <div class="solucion">
+            <img src="img/solucion.jpg" alt="">
+            <pre>
+                <code>
+
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="exercise-container">
+        <div class="exercise">
+            <h2></h2>
+            <p></p>
+            <textarea id="code2"></textarea>
+            <button onclick="executeCode(2)">Ejecutar</button>
+            <div id="output2"></div>
+        </div>
+        <div class="solucion">
+            <img src="img/solucion.jpg" alt="">
+            <pre>
+                <code>
+
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

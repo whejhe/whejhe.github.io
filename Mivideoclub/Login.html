@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: url(Iconos/libreria.jpg) no-repeat center top;
+            font-family: monospace;
+        }
+        .login{
+            width: 320px;
+            height: 400px;
+            background-color: rgba(0, 0, 0, 0.77);
+            color:#000000;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+            border: 5px solid #500000;
+            border-radius: 10px;
+            
+        }
+        .login label{
+            margin: 0;
+            padding: 0;
+            display: block;
+            text-shadow: 5px 3px 7px #500000;
+            color: white;
+        }
+        .login h1{
+            margin: 0;
+            padding: 0 0 20px;
+            text-align: center;
+            font-size: 22px;
+            text-shadow: 5px 3px 7px #500000;
+            color: white;
+        }
+        .login input{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .login a{
+            width: 100%;
+            display: block;
+            text-decoration: underline;
+            padding-top: 5px;
+        }
+        .login button{
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+  <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Noticias.html">Noticias</a></li>
+            <li><a href="">Enlace</a></li>
+            <li><a href="">Enlace</a></li>
+            <li><a href="">Enlace</a></li>
+            <li><a href="">Enlace</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+            <li class="derecha"><a href="Login.html"><span>Iniciar sesión</span></a></li>
+            <li class="derecha2"><a href="Registro.html"><span>Registranse</span></a></li>
+        </ul>
+    </nav>
+   <div class="login">
+       <h1>INICIAR SESIÓN</h1>
+       <form>
+           <label for="username">Nombre</label>
+           <input type="text" placeholder="Nombre Usuario">
+           <label for="password">Contraseña</label>
+           <input type="password" placeholder="Contraseña">   
+           <button>Log-in</button>
+           <a href="">Recuperar contraseña</a>
+           <a href="Registro.html">¿No tienes cuenta?</a>
+       </form>
+   </div>
+    
+</body>
+</html>

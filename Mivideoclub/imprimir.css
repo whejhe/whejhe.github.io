@@ -1,0 +1,17 @@
+html, body, section, footer, header{
+    background: #fff;
+}
+
+ul, aside, footer div, iframe, #Buzon{
+    display: none;
+}
+section{
+    width: 850px;
+    margin: auto;
+}
+header{
+    height: auto;
+}
+*{
+    color: #000 !important;
+}
