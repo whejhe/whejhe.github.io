@@ -178,3 +178,37 @@ nav a:hover {
     cursor: pointer;
     transform: scale(1.2);
 }
+
+/*videos y tutoriales*/
+.container-videos{
+    width: 75%;
+    margin: 100px auto;
+    text-align: left;
+    padding: 20px;
+    background-color: #b5b2b2;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #242424;
+    box-shadow: #242424 8px 8px 15px;
+}
+
+.container-videos h2{
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.flex{
+    display: flex;
+}
+
+iframe{
+    width: auto;
+    min-width: 500px;
+    height: 250px;
+    margin: 20px;
+    border: 1px solid #242424;
+    box-shadow: #242424 8px 8px 15px;
+}
+
+/*fin de videos y tutoriales*/
