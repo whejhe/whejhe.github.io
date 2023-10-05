@@ -11,15 +11,32 @@
 
 <body>
     <header>
-        <h1>Bienvenido a la Página de Aprendizaje de JavaScript</h1>
+        <h1>Ejercicios condicionales</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="ejercicios/ejercicios.html">Ejercicios</a></li>
+                <li id="ejercicios"><a href="#">Ejercicios</a>
+                    <ul>
+                        <li><a href="ejercicios/condicionales.html">Condicionales</a></li>
+                        <li><a href="enlace">pagina 2</a></li>
+                        <li><a href="enlace">pagina 3</a></li>
+                    </ul>
+                </li>
                 <li><a href="videosYtutoriales.html">Videos y Tutoriales</a></li>
                 <li><a href="apuntes.html">Apuntes</a></li>
             </ul>
         </nav>
+        <script>
+            const ejerciciosLi = document.getElementById('ejercicios');
+            const menuDesplegable = ejerciciosLi.querySelector('ul');
+            ejerciciosLi.addEventListener('click', function () {
+                if (menuDesplegable.style.display === 'none' || menuDesplegable.style.display === '') {
+                    menuDesplegable.style.display = 'block';
+                } else {
+                    menuDesplegable.style.display = 'none';
+                }
+            });
+        </script>
     </header>
     <main>
         <div class="mensajeInicio">

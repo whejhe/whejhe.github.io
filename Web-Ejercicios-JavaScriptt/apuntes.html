@@ -10,15 +10,32 @@
 
 <body>
     <header>
-        <h1>Apuntes</h1>
+        <h1>Ejercicios condicionales</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="ejercicios/ejercicios.html">Ejercicios</a></li>
+                <li id="ejercicios"><a href="#">Ejercicios</a>
+                    <ul>
+                        <li><a href="ejercicios/condicionales.html">Condicionales</a></li>
+                        <li><a href="enlace">pagina 2</a></li>
+                        <li><a href="enlace">pagina 3</a></li>
+                    </ul>
+                </li>
                 <li><a href="videosYtutoriales.html">Videos y Tutoriales</a></li>
                 <li><a href="apuntes.html">Apuntes</a></li>
             </ul>
         </nav>
+        <script>
+            const ejerciciosLi = document.getElementById('ejercicios');
+            const menuDesplegable = ejerciciosLi.querySelector('ul');
+            ejerciciosLi.addEventListener('click', function () {
+                if (menuDesplegable.style.display === 'none' || menuDesplegable.style.display === '') {
+                    menuDesplegable.style.display = 'block';
+                } else {
+                    menuDesplegable.style.display = 'none';
+                }
+            });
+        </script>
     </header>
     <main>
         <div class="container">
@@ -62,7 +79,7 @@
                 cambia. Pero hay constantes que son conocidas previo a la ejecución
                 (como el valor hexadecimal del color rojo) y hay constantes que son
                 calculadas en el tiempo de ejecución, pero no cambian después de
-                su asignación inicial.</p>         
+                su asignación inicial.</p>
         </div>
 
         <div class="container">
@@ -74,7 +91,9 @@
                 variable. Por este motivo JavaScript se considera un lenguaje
                 de tipado dinámico o débil</p>
             <h3>TIPOS DE DATOS - PRIMITIVOS</h3>
-            <strong><p>Number:</p></strong>
+            <strong>
+                <p>Number:</p>
+            </strong>
             <ul>
                 <li>El tipo number representa tanto números enteros como de punto flotante.</li>
                 <li>Además de los números comunes, existen los llamados “valores numéricos
@@ -84,7 +103,9 @@
                     un error fatal (“morir”). En el peor de los casos, obtendremos NaN como
                     resultado.</li>
             </ul>
-            <strong><p>BigInt:</p></strong>
+            <strong>
+                <p>BigInt:</p>
+            </strong>
             <ul>
                 <li>En JavaScript, el tipo “number” no puede representar valores enteros mayores
                     que (2 53 -1) (eso es 9007199254740991), o menor que -(2 53 -1) para
@@ -98,7 +119,9 @@
                 </code></pre>
             </ul>
             <h3>TIPOS DE DATOS - PRIMITIVOS</h3>
-            <strong><p>String:</p></strong>
+            <strong>
+                <p>String:</p>
+            </strong>
             <ul>
                 <li>Un string en JavaScript es una cadena de caracteres y debe colocarse entre
                     comillas</li>
@@ -117,11 +140,97 @@
                 </code></pre>
                 <li>No existe el tipo carácter</li>
             </ul>
+
+            <strong>
+                <p>Boolean o lógico:</p>
+            </strong>
+            <ul>
+                <li>El tipo boolean tiene sólo dos valores posibles: true y false</li>
+            </ul>
+            <strong>
+                <p>El valor “null”:</p>
+            </strong>
+            <ul>
+                <li>El valor especial null no pertenece a ninguno de los tipos descritos
+                    anteriormente</li>
+                <li>En JavaScript, null no es una “referencia a un objeto inexistente” o un “puntero
+                    nulo” como en otros lenguajes.</li>
+            </ul>
+            <strong>
+                <p>El valor “undefined”:</p>
+            </strong>
+            <ul>
+                <li>El valor especial undefined también se distingue. Hace un tipo propio, igual que
+                    null</li>
+                <li>El significado de undefined es “valor no asignado”.</li>
+                <li>Técnicamente, es posible asignar undefined a cualquier variable</li>
+                <pre>
+                <code>
+                    let nueva = 100;
+                    nueva = undefined;
+                    alert(nueva); //"undefined"
+                </code>
+            </pre>
+            </ul>
+
+            <strong>
+                <p>Object y Symbol:</p>
+            </strong>
+            <ul>
+                <li>El tipo object (objeto) es especial.</li>
+                <li>Los objetos se utilizan para almacenar colecciones de datos y entidades más
+                    complejas que los primitivos.</li>
+                <li>El tipo symbol (símbolo) se utiliza para crear identificadores únicos para los
+                    objetos</li>
+            </ul>
+
+            <h3>TIPOS DE DATOS - TYPEOF</h3>
+            <ul>
+                <li>El operador typeof devuelve el tipo del argumento.</li>
+                <li>Soporta dos formas de sintaxis:
+                    <ol>
+                        <li>Como operador: typeof x.</li>
+                        <li>Como una función: typeof(x).</li>
+                    </ol>
+                </li>
+                <li>La llamada a typeof x devuelve una cadena con el nombre del tipo</li>
+                <li>El resultado de typeof null es "object“. Esto está oficialmente reconocido como un
+                    error de comportamiento de typeof</li>
+            </ul>
+
+            <h3>TIPOS DE DATOS - RESUMEN</h3>
+            <ul>
+                <li>Hay 8 tipos básicos en JavaScript:
+                    <ul>
+                        <li>number para números de cualquier tipo: enteros o de punto flotante, los enteros
+                            están limitados por ±(2 53 -1).</li>
+                        <li>bigint para números enteros de longitud arbitraria.</li>
+                        <li>string para cadenas. Una cadena puede tener cero o más caracteres, no hay un
+                            tipo especial para un único carácter.</li>
+                        <li>boolean para verdadero y falso: true/false.</li>
+                        <li>null para valores desconocidos – un tipo independiente que tiene un solo valor
+                            nulo: null.</li>
+                        <li>undefined para valores no asignados – un tipo independiente que tiene un
+                            único valor “indefinido”: undefined.</li>
+                        <li>object para estructuras de datos complejas.</li>
+                        <li>symbol para identificadores únicos.</li>
+                    </ul>
+                </li>
+                <li>El operador typeof nos permite ver qué tipo está almacenado en una variable.
+                    <ul>
+                        <li>Dos formas: typeof x o typeof(x).</li>
+                        <li>Devuelve una cadena con el nombre del tipo. Por ejemplo "string".</li>
+                        <li>Para null devuelve "object": esto es un error en el lenguaje, en realidad no es
+                            un objeto.</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
+
         <div class="flecha">
             <a href="#"><img src="img/flecha.png" alt=""></a>
         </div>
-        
+
     </main>
 </body>
 

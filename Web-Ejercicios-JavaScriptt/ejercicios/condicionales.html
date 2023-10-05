@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios Con JavaScript</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="desplegable.js">
 </head>
+
 <body>
     <header>
         <h1>Ejercicios condicionales</h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="ejercicios.html" id="desplegable">Ejercicios</a>
-                <div>
+                <li id="ejercicios"><a href="#">Ejercicios</a>
                     <ul>
-                        <l1><a href="#">Condicionales</a></l1><br>
-                        <l1><a href="">Arrays</a></l1><br>
-                        <l1><a href="">Funciones</a></l1><br>
+                        <li><a href="condicionales.html">Condicionales</a></li>
+                        <li><a href="enlace">pagina 2</a></li>
+                        <li><a href="enlace">pagina 3</a></li>
                     </ul>
-                </div></li>
+                </li>
                 <li><a href="../videosYtutoriales.html">Videos y Tutoriales</a></li>
                 <li><a href="../apuntes.html">Apuntes</a></li>
             </ul>
         </nav>
+        <script>
+            const ejerciciosLi = document.getElementById('ejercicios');
+            const menuDesplegable = ejerciciosLi.querySelector('ul');
+            ejerciciosLi.addEventListener('click', function () {
+                if (menuDesplegable.style.display === 'none' || menuDesplegable.style.display === '') {
+                    menuDesplegable.style.display = 'block';
+                } else {
+                    menuDesplegable.style.display = 'none';
+                }
+            });
+        </script>
     </header>
     <div class="exercise-container">
         <div class="exercise">
@@ -37,19 +50,19 @@
             <img src="../img/solucion.jpg" alt="">
             <pre>
                 <code>
-                    function determinarPositivoNegativo(numero) {
-                        if (numero > 0) {
-                            return "El número es positivo";
-                        } else if (numero < 0) {
-                            return "El número es negativo";
-                        } else {
-                            return "El número es cero";
-                        }
-                    }
+function determinarPositivoNegativo(numero) {
+    if (numero > 0) {
+    return "El número es positivo";
+    } else if (numero < 0) {
+    return "El número es negativo";
+    } else {
+    return "El número es cero";
+    }
+}
             
-                    let numero = 5;
-                    let resultado = determinarPositivoNegativo(numero);
-                    console.log(resultado); // Imprimirá "El número es positivo"`;
+let numero = 5;
+let resultado = determinarPositivoNegativo(numero);
+console.log(resultado); // Imprimirá "El número es positivo"`;
                 </code>
             </pre>
         </div>
@@ -93,4 +106,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

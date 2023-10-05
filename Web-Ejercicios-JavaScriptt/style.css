@@ -1,4 +1,8 @@
 /* Estilos generales */
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family:'Courier New', Courier, monospace;
     background-color: #b5b3b3;
@@ -36,7 +40,9 @@ pre{
     color: #181204;
     overflow-x: auto;
     max-width:100%;
+    tab-size: initial;
 }
+
 
 .mensajeInicio {
     width: 75%;
@@ -65,10 +71,26 @@ nav {
     background-color: #655025; /* Color de fondo del menú */
     padding: 10px; /* Espaciado interno del menú */
 }
-
+.ejercicios{
+    position: relative;
+}
 /* Estilos para la lista de enlaces */
+#desplegable{
+    position: absolute;
+    display:block;
+    margin-top: 25px;
+    text-align: left;
+    background-color: #655025;
+    padding: 15px;
+    visibility: hidden;
+}
+#desplegable:hover{
+    visibility:visible;
+    transition-duration: 10ms;
+}
+
 nav ul {
-    list-style: none; /* Quita los marcadores de lista */
+    list-style: none;
     padding: 0;
     margin: 0;
 }
@@ -91,17 +113,56 @@ nav a {
 nav a:hover {
     text-decoration: underline; /* Subrayado al pasar el cursor por encima */
 }
+/*Desplegable*/
+nav ul ul{
+    display: none;
+    position: absolute;
+    background-color: #655025;
+    z-index: 1;
+    right: 54%;
+    margin-top: 15px;
+}
+
+nav ul ul li{
+    display: block;
+    width: 100%;
+}
+
+nav ul ul li a{
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+}
+
+nav ul ul li a:hover{
+    background-color: #b5b2b2;
+}
+
+nav ul li #ejercicios ul{
+    position: relative;
+    top: 100%;
+}
+/*Fin Desplegable*/
 
 
 /*--------------------------------------------*/
 
 .exercise-container {
-    display: flex;
-    align-items: flex-start;
-    max-height: 400px;
+    /*display: flex;*/
+    min-height: 400px;
+    margin: auto;
+    width: 85%;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #242424;
+    box-shadow: #242424 8px 8px 15px;
 }
 .exercise {
-    flex: 1;
+    float: left;
+    /*flex: 1;*/
     margin: 20px 20px;
     border: 1px solid #ccc;
     padding: 10px;
@@ -199,12 +260,15 @@ nav a:hover {
 }
 
 .flex{
-    display: flex;
+    /*display: flex;*/
+    overflow: hidden;
+    
 }
 
 iframe{
-    width: auto;
-    min-width: 500px;
+    top: 10px;
+    float: right;
+    width: 30%;
     height: 250px;
     margin: 20px;
     border: 1px solid #242424;
