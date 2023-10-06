@@ -95,7 +95,6 @@ nav ul {
     margin: 0;
 }
 
-/* Estilos para los elementos de la lista */
 nav li {
     display: inline; /* Los elementos de la lista se muestran en línea */
     margin-right: 20px; /* Espacio entre los elementos de la lista */
@@ -143,6 +142,50 @@ nav ul li #ejercicios ul{
     position: relative;
     top: 100%;
 }
+
+/*Opciones DesplegableApuntes*/
+#desplegableApuntes{
+    position: relative;
+}
+
+#desplegableApuntes ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #655025;
+    padding: 0;
+    display: none;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    min-width:fit-content;
+    max-width: 200px;
+}
+
+
+#desplegableApuntes ul li{
+    display: block;
+    text-align: left;
+}
+
+#desplegableApuntes:hover ul,
+#desplegableApuntes ul:hover {
+    display: block;
+    visibility: visible;
+}
+
+#desplegableApuntes ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    width: 100%;
+}
+
+#desplegableApuntes ul li a:hover{
+    background-color: #b5b2b2;
+}
+/*Fin Opciones DesplegableApuntes*/
+
 /*Fin Desplegable*/
 
 
