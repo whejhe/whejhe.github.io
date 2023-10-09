@@ -6,15 +6,19 @@ nav{
 }
 section{
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
 }
 article{
-    display: inline-table;
-    width: auto;
     margin: 15px 10px;
 }
 .Plantilla{
-    border: 10px solid rgb(71, 71, 71);
-    border-radius: 18px 0px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px;
 }
 .Plantilla img:hover{
     width: 340px;
