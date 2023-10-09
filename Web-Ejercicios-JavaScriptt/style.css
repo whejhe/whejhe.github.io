@@ -3,9 +3,13 @@ html{
     scroll-behavior: smooth;
 }
 
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 body {
-    font-family:'Courier New', Courier, monospace;
-    background-color: #b5b3b3;
+    background-color: #d2d0d0;
     margin: 0;
     padding: 0;
 }
@@ -23,7 +27,6 @@ header {
     text-align: left;
     padding: 20px;
     background-color: #b5b2b2;
-    font-family: 'Courier New', Courier, monospace;
     border: 1px solid #242424;
     box-shadow: #242424 8px 8px 15px;
 }
@@ -33,16 +36,10 @@ header {
     text-decoration: underline;
 }
 
-pre{
-    border: 1px solid #242424;
-    background-color: rgb(225, 227, 226);
-    font-size: 18px;
-    color: #181204;
-    overflow-x: auto;
-    max-width:100%;
-    tab-size: initial;
+.container p{
+    text-align: justify;
+    font-size: large;
 }
-
 
 .mensajeInicio {
     width: 75%;
@@ -50,7 +47,6 @@ pre{
     text-align: center;
     padding: 20px;
     background-color: #ece4e4;
-    font-family: 'Courier New', Courier, monospace;
     border: 1px solid #242424;
     box-shadow: #242424 8px 8px 15px;
 }
@@ -68,8 +64,8 @@ pre{
 
 /* Estilos generales para el menú de navegación */
 nav {
-    background-color: #655025; /* Color de fondo del menú */
-    padding: 10px; /* Espaciado interno del menú */
+    background-color: #655025; 
+    padding: 10px;
 }
 .ejercicios{
     position: relative;
@@ -97,15 +93,15 @@ nav ul {
 
 nav li {
     display: inline; /* Los elementos de la lista se muestran en línea */
-    margin-right: 20px; /* Espacio entre los elementos de la lista */
+    margin-right: 20px;
 }
 
 /* Estilos para los enlaces */
 nav a {
     text-decoration: none; /* Quita la subrayado predeterminado de los enlaces */
-    color: #fff; /* Color del texto de los enlaces */
+    color: #fff;
     font-weight: bold; /* Estilo de fuente en negrita */
-    font-size: 20px; /* Tamaño de fuente */
+    font-size: 20px;
 }
 
 /* Estilos para los enlaces al pasar el cursor por encima */
@@ -290,7 +286,6 @@ nav ul li #ejercicios ul{
     text-align: left;
     padding: 20px;
     background-color: #b5b2b2;
-    font-family: 'Courier New', Courier, monospace;
     border: 1px solid #242424;
     box-shadow: #242424 8px 8px 15px;
 }
@@ -311,7 +306,6 @@ nav ul li #ejercicios ul{
 iframe{
     top: 10px;
     float: right;
-    width: 30%;
     height: 250px;
     margin: 20px;
     border: 1px solid #242424;
