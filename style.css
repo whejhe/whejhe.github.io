@@ -4,6 +4,23 @@ nav{
     background-color: black;
     border-bottom: 10px solid rgb(71, 71, 71);
 }
+
+p{
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
+    margin: 0;
+}
+
+h1{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 20px;
+    text-decoration: underline;
+}
 section{
     text-align: center;
     display: flex;
