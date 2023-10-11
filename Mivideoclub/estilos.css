@@ -106,8 +106,8 @@ div{
 
 section{
     
-    width: 70%;
-    margin: auto;
+    width: auto;
+    margin: 170px;
     margin-left: 180px;
     margin-top: 20px;
     border: 5px solid #500000;
@@ -116,6 +116,13 @@ section{
     background-color: black;
     
 }
+
+.listaPeliculas{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+
 aside{
     background-color: black;
     border: 5px solid #500000;
