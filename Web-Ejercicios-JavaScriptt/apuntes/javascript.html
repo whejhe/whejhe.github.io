@@ -124,7 +124,7 @@
             <p>Para definir una función, utilizamos la palabra clave <code>function</code>:</p>
             <pre><code>
         function miFuncion() {
-            // Código de la función
+            <span>// Código de la función</span>
         }
                 </code></pre>
             <p>Las funciones pueden recibir parámetros que actúan como variables dentro de la función:</p>
@@ -132,21 +132,21 @@
         function saludar(nombre) {
             console.log(`Hola, ${nombre}!`);
         }
-        saludar("Juan"); // Salida: "Hola, Juan!"
+        saludar("Juan"); <span>// Salida: "Hola, Juan!"</span>
                 </code></pre>
             <p>Las funciones pueden devolver un valor usando la palabra clave <code>return</code>:</p>
             <pre><code>
         function suma(a, b) {
             return a + b;
         }
-        const resultado = suma(2, 3); // resultado contendrá 5
+        const resultado = suma(2, 3); <span>// resultado contendrá 5</span>
                 </code></pre>
             <h3>Ámbito de las Variables</h3>
             <p>Las variables declaradas dentro de una función solo son visibles dentro de esa función, esto se llama
                 ámbito local:</p>
             <pre><code>
         function miFuncion() {
-            let x = 10; // variable local
+            let x = 10; <span>// variable local</span>
         }
         console.log(x); // Error: x no está definida aquí
                 </code></pre>
@@ -155,14 +155,14 @@
             <pre><code>
         let y = 20; // variable global
         function otraFuncion() {
-            console.log(y); // Se puede acceder a y desde aquí
+            console.log(y); <span>// Se puede acceder a y desde aquí</span>
         }
                 </code></pre>
             <h3>Funciones Flecha</h3>
             <p>Las funciones flecha son una forma más corta de definir funciones:</p>
             <pre><code>
         const suma = (a, b) => a + b;
-        const resultado = suma(2, 3); // resultado contendrá 5
+        const resultado = suma(2, 3); <span>// resultado contendrá 5</span>
                 </code></pre>
         </div>
 
@@ -170,19 +170,19 @@
             <h2>Invocación de Funciones</h2>
             <p>Para llamar a una función, simplemente escribimos su nombre seguido de paréntesis:</p>
             <pre><code>
-        miFuncion(); // Llamada a la función miFuncion
+        miFuncion(); <span>// Llamada a la función miFuncion</span>
                 </code></pre>
             <p>Podemos pasar argumentos a la función dentro de los paréntesis:</p>
             <pre><code>
-        saludar("Ana"); // Llamada a la función saludar con el argumento "Ana"
+        saludar("Ana"); <span>// Llamada a la función saludar con el argumento "Ana"</span>
                 </code></pre>
             <h3>Funciones como Expresiones</h3>
             <p>En JavaScript, las funciones también pueden ser tratadas como valores y asignadas a variables:</p>
             <pre><code>
         const miFuncion = function() {
-            // Código de la función
+            <span>// Código de la función</span>
         };
-        miFuncion(); // Llamada a la función a través de la variable
+        miFuncion(); <span>// Llamada a la función a través de la variable</span>
                 </code></pre>
         </div>
 
@@ -195,8 +195,8 @@
             <ul>
                 <li><strong>Operadores Aritméticos:</strong> Se utilizan para realizar cálculos matemáticos.</li>
                 <pre><code>
-        let suma = 5 + 3; // suma contiene 8
-        let resta = 10 - 4; // resta contiene 6
+        let suma = 5 + 3; <span>// suma contiene 8</span>
+        let resta = 10 - 4; <span>// resta contiene 6</span>
         let multiplicacion = 6 * 2; // multiplicacion contiene 12
         let division = 8 / 4; // division contiene 2
                 </code></pre>

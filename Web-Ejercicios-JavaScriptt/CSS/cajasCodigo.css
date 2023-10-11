@@ -17,3 +17,6 @@ pre code {
     display: block; /* Asegura que el código ocupe todo el ancho disponible */
 }
 
+pre code span{
+    color: aliceblue;
+}
