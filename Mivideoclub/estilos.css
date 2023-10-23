@@ -9,24 +9,25 @@ body{
 }
 
 header{
-    height: 160px; 
-    padding: 0 0 10px 10px;
+    min-height: 12em; 
+    padding: 1.2em 0 1em 1em;
     background-size: 100%;
     background-color: black;
     margin: 0;
     position: sticky;
     top: 0;
+    opacity: 0.8;
 }
-div.icono{
+.icono{
     background-image: url(Iconos/tv-antigua2.png);
     background-repeat: no-repeat;
     background-size:contain;
     height: inherit;
-    margin: 0 0 0 25px;
+    margin: 0 0 0 5em;
 }
 header h1{
     text-align: center;
-    padding-top: 30px;
+    padding-top: 1em;
     font-size: 3em;
     font-family:fantasy;
     margin-bottom: 10px;
@@ -52,6 +53,7 @@ header, nav{
     width: 100%;
 }
 /*Fin de la cabecera*/
+
 /*Navegador*/
 nav{
     background-color: black;
@@ -84,20 +86,26 @@ ul{
     width: 100%;
     margin-top: 0;
 }
-.derecha{
+.login{
     float: right;
-    margin-right: 60px;
+    margin-right: 6em;
 }
-.derecha2{
+
+.login span{
+    font-size: 1.3em;
+}
+
+.registro{
     float: right;
-    margin-right: 20px;
+    margin-right: 2em;
+}
+
+.registro span{
+    font-size: 1.3em;
 }
 
 /*Fin del Navegador*/
 /*Cuerpo*/
-.container{
-    width: 90%;
-}
 
 h1,h2,h3,a,p{
     font-family: monospace;
@@ -107,9 +115,13 @@ div{
     padding: 0;
 }
 
+.container{
+    display: flex;
+    width: 85%;
+    margin: 10em auto;
+}
 
 section{
-    
     width: auto;
     margin: 170px;
     margin-left: 180px;
@@ -125,35 +137,43 @@ section{
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    width: 65%;
+    width: 75%;
     align-items: center;
-    margin: 80px auto;
+    top: 0;
+    margin: 0 0 0 3em;
+    padding: 0;
+}
+
+.menuCategorias{
+    margin: 0;
+    padding: 0;
 }
 
 aside{
     background-color: black;
     border: 5px solid #500000;
     border-radius: 8px;
+    box-shadow: 5px 5px 20px 10px #500000;
     width: 10%;
     margin: auto;
-    float: left;
-    margin-top: 20px;
-    margin-left: 25px;
-    padding-bottom: 15px;
+    margin-top: 1em;
+    margin-left: 1em;
+    padding-bottom: 1em;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 aside h2{
     color: white;
     font-family: monospace;
     text-align: center;
+    font-size:1.5em;
 }
+
+
 aside li{
-    font-size: 15px;
+    font-size: 1.3em;
     font-family: monospace;
     margin: auto;
-    padding-left: 15px;
     margin-top: 10px; 
 }
 a:visited{
@@ -166,10 +186,10 @@ aside a:hover{
     font-size: 20px;
 }
 span img{
-    height: 235px;
-    margin: 1px 2px 8px 4px;
-    width: 164px;
-
+    max-height: 19em;
+    margin: 0;
+    width: auto;
+    padding: 0;
 }
 a span img:hover{
     border: 3px solid #500000;
@@ -179,10 +199,15 @@ a span img:hover{
 
 }
 #flecha{
-    float: right;
-    margin: -140px 20px 20px 10px;
-    
+    position: fixed;
+    bottom: 6em;
+    right: 6em;
+    background-color: #3b0404;
+    border-radius: 8em;
+    opacity: 0.8;
 }
+
+
 a img:hover{
     border: 3px solid #500000;
     box-shadow: 8px 2px 20px 5px #000000;
@@ -193,10 +218,8 @@ a img:hover{
 /*Pie de pagina*/
 footer{
     background-color:black;
-    height: 150px;
-    margin-top: 50px;
+    height: 8em;
     background-size: 100%;
-    position: fixed;
     width: 100%;
     bottom: 0;
     
