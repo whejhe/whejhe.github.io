@@ -8,7 +8,7 @@ p{
 .container{
     background-color: beige;
     display: grid;
-    grid-template-columns: 20% 20% 20%;
+    grid-template-columns: 15% 30% 30%;
     grid-template-rows: auto auto;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
@@ -23,38 +23,87 @@ p{
     border: 5px solid #686464;
 }
 
-.objeto1{
+.cabecera{
     background-color: blue;
-    grid-column: 1/4;
+    min-height:7em;
+    display: flex;
+    align-items: center;
 }
 
-.objeto2{
+.cabecera p{
+    text-align: center;
+    width: 100%;
+}
+
+.aside{
     background-color:red;
     grid-row: 2/5;
+    display: flex;
+    align-items: center;
+}
+.aside p{
+    width: 100%;
+    text-align: center;
 }
 
-.objeto3{
+.section{
     background-color: yellow;
-    grid-column: 2/4;
+    grid-column: 1/4;
+    display: flex;
+    align-items: center;
+}
+.section p{
+    width: 100%;
 }
 
-.objeto4{
+.article1{
     background-color: rgb(165, 42, 155);
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+}
+.article1 p{
+    width: 100%;
 }
 
-.objeto5{
+
+.article2{
     background-color: green;
+    display: flex;
+    align-items: center;
 }
 
-.objeto6{
+.article2 p{
+    width: 100%;
+}
+
+.article3{
     background-color: rebeccapurple;
+    display: flex;
+    align-items: center;
 }
 
-.objeto7{
+.article3 p{
+    width: 100%;
+}
+
+.article4{
     background-color: yellowgreen;
+    display: flex;
+    align-items: center;
 }
 
-.objeto8{
+.article4 p{
+    width: 100%;
+}
+
+.footer{
     background-color: rgb(51, 129, 153);
     grid-column: 1/4;
+    display: flex;
+    align-items: center;
+}
+.footer p{
+    width: 100%;
+    text-align: center;
 }

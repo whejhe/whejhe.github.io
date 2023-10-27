@@ -1,0 +1,61 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+.search-bar {
+    display: flex;
+}
+
+/* Estilos del contenedor principal */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.container {
+    text-align: center;
+    width: 60%;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.icons {
+    font-size: 24px;
+}
+
+/* Estilos de íconos (puedes usar íconos reales aquí) */
+.fa {
+    margin: 0 10px;
+}
