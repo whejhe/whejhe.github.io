@@ -11,11 +11,12 @@ p{
     grid-template-columns: 15% 30% 30%;
     grid-template-rows: auto auto;
     grid-column-gap: 1em;
-    grid-row-gap: 1em;
+    grid-row-gap: 1vh;
     justify-content: center;
     margin:auto;
     padding: 7em 0;
     text-align: center;
+    height: 60vh;
 }
 
 .container div{
@@ -40,6 +41,7 @@ p{
     grid-row: 2/5;
     display: flex;
     align-items: center;
+    height: 36vh;
 }
 .aside p{
     width: 100%;
@@ -49,6 +51,7 @@ p{
 .section{
     background-color: yellow;
     grid-column: 1/4;
+    grid-row:1/1;
     display: flex;
     align-items: center;
 }
@@ -61,6 +64,7 @@ p{
     grid-column: 2/3;
     display: flex;
     align-items: center;
+    height: 16vh;
 }
 .article1 p{
     width: 100%;
@@ -71,6 +75,7 @@ p{
     background-color: green;
     display: flex;
     align-items: center;
+    height: 16vh;
 }
 
 .article2 p{
@@ -81,6 +86,7 @@ p{
     background-color: rebeccapurple;
     display: flex;
     align-items: center;
+    height: 16vh;
 }
 
 .article3 p{
@@ -91,6 +97,7 @@ p{
     background-color: yellowgreen;
     display: flex;
     align-items: center;
+    height: 16vh;
 }
 
 .article4 p{
