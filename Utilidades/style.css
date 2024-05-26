@@ -11,7 +11,14 @@ html, body{
 }
 
 .container{
-    margin: 2em;
+    margin: 2em auto;
+    width: 80%;
+}
+h1{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-decoration: underline;
 }
 h3{
     font-weight: bold;
