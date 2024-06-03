@@ -1,0 +1,135 @@
+.outerwrapper {
+    height: 50em;
+    width: 50em;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.innerwrapper {
+    height: 35em;
+    width: 35em;
+    position: relative;
+    border-radius: 50%;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.botonFichaje {
+    display: flex;
+    height: 11.5em;
+    width: 11.5em;
+    /* background-color: $secondary; */
+    position: absolute;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 11;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+
+    p {
+        font-size: x-large;
+        margin-top: 15px;
+        user-select: none;
+    }
+
+    &-label {
+        color: antiquewhite;
+        font-weight: bold;
+        font-size: x-large;
+    
+    }
+
+    &:hover {
+        background-color: antiquewhite;
+        transform: scale(1.15);
+        transition: all .5s ease;
+        box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.35);
+
+        .botonFichaje-label{
+            color: black
+        }
+    }
+}
+
+
+
+ul {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -60%;
+    top: -60%;
+
+}
+
+li {
+    font-size: larger;
+    list-style: none;
+    width: 17.5em;
+    height: 17.5em;
+    position: absolute;
+    transform-origin: 100% 100%;
+    overflow: hidden;
+    text-align: center;
+    max-width: 1500px;
+
+    & a {
+        display: block;
+        height: 20em;
+        width: 20em;
+        /* background: #dbaf97; */
+        /* background-color: rgba($color: white, $alpha: 0.2); */
+        border: 1px black solid;
+        position: absolute;
+        font-size: 1.2em;
+        bottom: -10em;
+        right: -10em;
+        text-decoration: none;
+        border-radius: 50%;
+        padding-top: 0;
+        transition: scale .4s;
+
+        span {
+            opacity: 0;
+            display: block;
+            transition: all 1s ease;
+            user-select: none;
+            margin-top: 15px;
+            font-family: Helvetica, sans-serif;
+            color: antiquewhite;
+            text-shadow: 1px 2px 1px black;
+        }
+
+        img {
+            margin-top: auto;
+            height: 51.2px;
+            transition: all .5s ease;
+        }
+
+        &:hover {
+            /* background: rgba($color: #f1efef, $alpha: 0.7); */
+            scale: 1.215;
+
+            span {
+
+                transition: all .5s ease;
+                opacity: 1;
+            }
+
+            img {
+                transition: all .5s ease;
+                height: 60px;
+            }
+        }
+    }
+}
