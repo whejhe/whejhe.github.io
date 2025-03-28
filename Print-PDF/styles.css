@@ -53,8 +53,6 @@ h1, h2 {
 }
 
 section {
-    margin-top: 15px;
-    padding-bottom: 15px;
     page-break-inside: avoid;
     padding-left: 20px;
     padding-right: 20px;
@@ -114,4 +112,28 @@ button {
 
 button:hover {
     background: #d9234a;
+}
+
+@media print {
+    body {
+        background-color: white;
+    }
+
+    #page1 {
+        width: 100%;
+        height: auto; /* Permite que crezca dinámicamente */
+        outline: none;
+    }
+
+    section {
+        page-break-inside: avoid; /* Evita cortes en medio de secciones */
+    }
+
+    .experiencia {
+        page-break-before: auto; /* Intenta que la sección de experiencia no se corte */
+    }
+
+    button {
+        display: none; /* Oculta el botón de descarga en la impresión */
+    }
 }
