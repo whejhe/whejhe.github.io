@@ -86,7 +86,7 @@ section:last-of-type {
 
 p, li {
     line-height: 1.6;
-    color: #343a40;
+    color: #202020;
     letter-spacing: 2px; /* Ajusta el espaciado entre letras */
     /* word-spacing: 3px; Ajusta el espaciado entre palabras */
     white-space: normal; /* Asegura que los espacios se rendericen correctamente */
