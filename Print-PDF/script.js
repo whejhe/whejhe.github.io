@@ -1,13 +1,23 @@
 document.getElementById('download').addEventListener('click', () => {
     const cvElement = document.getElementById('page1');
-    
-    const options = {
-        margin: 0,
-        filename: 'CV-Carlos-Fernandez.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2, useCORS: true },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-    };
-    
-    html2pdf().from(cvElement).set(options).save();
+
+    // Import jsPDF
+    const { jsPDF } = window.jspdf;
+
+    // Crear un nuevo jsPDF en formato A4 y orientación vertical
+    const pdf = new jsPDF('p', 'mm', 'a4');
+
+    // Función para añadir el contenido HTML al PDF
+    pdf.html(cvElement, {
+        callback: function (pdf) {
+            // Guardar el PDF
+            pdf.save("CV-Carlos-Fernandez.pdf");
+        },
+        margin: [10, 10, 10, 10], // Márgenes
+        autoPaging: 'text',
+        x: 0,
+        y: 0,
+        width: 190, // Ajustar el ancho según sea necesario
+        windowWidth: 800 // Ancho de la ventana
+    });
 });
