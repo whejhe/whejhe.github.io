@@ -58,8 +58,8 @@ h1, h2 {
 }
 
 section {
-    margin-top: 15px;
-    padding-bottom: 15px;
+    margin-top: 10px;
+    padding-bottom: 10px;
     page-break-inside: avoid;
     padding-left: 20px;
     padding-right: 20px;
