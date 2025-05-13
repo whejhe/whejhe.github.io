@@ -1,0 +1,22 @@
+@use 'variables'; // Importa variables
+@use 'mixins'; // Importa mixins
+
+.header {
+  @include mixins.flex-center; // Usa el namespace
+  background: variables.$primary-color;
+  padding: 2rem;
+  color: white;
+  font-family: variables.$font-main;
+
+  .btn {
+    @include mixins.box-shadow(0, 2px, 5px, rgba(0,0,0,0.2));
+    background: variables.$secondary-color;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

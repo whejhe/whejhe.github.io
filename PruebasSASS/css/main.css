@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3498db;
+  padding: 2rem;
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+.header .btn {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background: #2ecc71;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.header .btn:hover {
+  opacity: 0.9;
+}
+
+/* Estilos globales */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,10 @@
+// Usa @use en lugar de @import
+@use 'variables';
+@use 'mixins';
+@use 'header';
+
+/* Estilos globales */
+body {
+  margin: 0;
+  font-family: variables.$font-main; // Accede a las variables con el namespace
+}

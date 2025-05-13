@@ -9,6 +9,7 @@ document.getElementById('download').addEventListener('click', () => {
 
     // Función para añadir el contenido HTML al PDF
     pdf.html(cvElement, {
+        enableLinks: true,
         callback: function (pdf) {
             // Guardar el PDF
             pdf.save("CV-Carlos-Fernandez.pdf");
@@ -18,6 +19,9 @@ document.getElementById('download').addEventListener('click', () => {
         x: 0,
         y: 0,
         width: 190, // Ajustar el ancho según sea necesario
-        windowWidth: 800 // Ancho de la ventan
+        windowWidth: 800 ,// Ancho de la ventan
+        html2canvas: {
+            useCORS: true
+        }
     });
 });
